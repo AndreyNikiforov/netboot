@@ -42,7 +42,7 @@ goto loop
 # Got a filename from ProxyDHCP, that's the actual boot script,
 # off we go!
 :boot
-chain ${filename}
+sanboot ${filename}
 
 # Failure at this point probably means Pixiecore changed its mind
 # about whether this machine should be booted in the middle of the
